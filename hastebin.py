@@ -1,6 +1,5 @@
 import aiohttp
-import json
-import asyncio
+
 
 class Session:
 
@@ -9,8 +8,8 @@ class Session:
 
     async def post_content(self, payload: str):
         async with aiohttp.ClientSession() as session:
-            async with session.post(url='https://hastebin.com/documents', data=payload) as resp:
-                key = json.loads(await resp.text())
+            async with session.post(url='https://hastebin.com/documents', data=payload.encode('utf-8')) as resp:
+                key = await resp.json()
                 if self.links:
                     return "https://hastebin.com/" + key["key"]
                 else:
