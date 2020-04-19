@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup(
      name='HasteBinWrapper',  
      version='0.2',
-     scripts=['HasteBin'] ,
+     scripts=['HasteBin.py'] ,
      author="Matthew",
      description="A wrapper for hastebin",
      url="https://github.com/DankDumpster/HasteBinWrapper",
@@ -14,3 +14,4 @@ setuptools.setup(
          "Operating System :: OS Independent",
      ],
  )
+
