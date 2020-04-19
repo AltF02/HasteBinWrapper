@@ -22,9 +22,9 @@ HasteBin.Session(links=True)
 Returns links
 
 ```python
-link = haste.upload("Your text")
+link = await haste.upload("Your text")
 ```
 
 ```python
-content = haste.read("HasteBin Link")
+content = await haste.read("HasteBin Link")
 ```
