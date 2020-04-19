@@ -9,6 +9,13 @@ Requirements
 - Python >= 3.7
 - [aiohttp](https://docs.aiohttp.org/en/stable/)
 
+Installation
+------------
+```
+pip install git+https://github.com/DankDumpster/HasteBinWrapper
+```
+
+
 Usage
 -----
 
