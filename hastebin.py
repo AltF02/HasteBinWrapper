@@ -12,8 +12,6 @@ class HasteBin:
         async with aiohttp.ClientSession() as session:
             async with session.post(url='https://hastebin.com/documents', data=payload) as resp:
                 key = json.loads(await resp.text())
-                print(key)
-                print(key["key"])
                 if self.links:
                     return "https://hastebin.com/" + key["key"]
                 else:
