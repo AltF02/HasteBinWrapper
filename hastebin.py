@@ -2,8 +2,7 @@ import aiohttp
 import json
 import asyncio
 
-
-class HasteBin:
+class Session:
 
     def __init__(self, links: bool = False):
         self.links = links
@@ -16,5 +15,3 @@ class HasteBin:
                     return "https://hastebin.com/" + key["key"]
                 else:
                     return key["key"]
-                    
-                    
