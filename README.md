@@ -20,12 +20,12 @@ Usage
 -----
 
 ```python
-import HasteBin
+import hastebin
 
-haste = HasteBin.Session()
+haste = hastebin.Session()
 ```
 
-HasteBin.Session(links=True)
+hastebin.Session(links=True)
 Returns links
 
 ```python
@@ -39,10 +39,10 @@ content = await haste.read("HasteBin Link")
 Example
 -------
 ```python
-import HasteBin
+import haste
 import asyncio
 
-haste = HasteBin.Session(links=True)  # initiates the client
+haste = haste.Session(links=True)  # initiates the client
 
 
 async def main():
